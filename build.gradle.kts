@@ -11,7 +11,9 @@ repositories {
 }
 
 dependencies {
+    implementation(Ktor.client.core)
     testImplementation(kotlin("test"))
+    testImplementation(Ktor.client.mock)
 }
 
 tasks.test {
