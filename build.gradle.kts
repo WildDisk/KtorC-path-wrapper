@@ -19,3 +19,15 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "ru.wilddisk"
+            artifactId = "ktorc-path-wrapper"
+            version = "1.0.0"
+
+            from(components["java"])
+        }
+    }
+}
