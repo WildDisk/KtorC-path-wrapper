@@ -1,8 +1,25 @@
 # Ktor-client path wrapper
 
+[![](https://jitpack.io/v/WildDisk/ktorc-path-wrapper.svg)](https://jitpack.io/#WildDisk/ktorc-path-wrapper)
+
 ## Wrapper over ktor-client to determine the path to the endpoint
 
 How to use
+
+add repository
+```kotlin
+repositories {
+    mavenCentral()
+    maven { url = uri("https://jitpack.io") }
+}
+```
+
+add dependency
+```kotlin
+dependencies {
+    implementation("com.github.WildDisk:ktorc-path-wrapper:1.0.0")
+}
+```
 
 Configure client
 ```kotlin
